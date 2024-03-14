@@ -15,7 +15,15 @@ function App() {
 
   // Function to add a track to the playlist
   const addTrackToPlaylist = (track) => {
-    setPlaylistTracks([...playlistTracks, track]);
+    // Check if the track already exists in the playlist
+    const isDuplicate = playlistTracks.some((playlistTrack) => playlistTrack.id === track.id); //returns truthy is there's a matching track id already within the playlist array....i think.
+
+    if (!isDuplicate) {
+      setPlaylistTracks([...playlistTracks, track]);  // If the track is not a duplicate, add it to the playlist
+    } else {
+      // If the track is a duplicate
+      alert(`${track.name} is already in the playlist!`);
+    }
   };
 
   // Function to remove a track from the playlist
