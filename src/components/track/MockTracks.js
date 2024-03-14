@@ -5,7 +5,6 @@ const MockTracks  = [
     { id: '4', name: 'Song 4', artist: 'Artist 4', album: 'Album 4' },
     { id: '5', name: 'Song 5', artist: 'Artist 5', album: 'Album 5' },
     { id: '6', name: 'Song 6', artist: 'Artist 6', album: 'Album 6' },
-    // Add more track objects as needed
   ];
 
 export default MockTracks ;
