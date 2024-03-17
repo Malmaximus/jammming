@@ -4,7 +4,7 @@ import React, { useState }  from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import TrackList from '../tracklist/Tracklist.js';
+import TrackList from '../tracklist/Tracklist';
 import MockTracks from '../track/MockTracks';
 import Playlist from '../playlist/Playlist';
 

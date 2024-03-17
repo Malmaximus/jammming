@@ -12,6 +12,7 @@ const TrackList = ({ tracks, addTrackToPlaylist }) => {
             artist={track.artist}
             album={track.album}
             id={track.id}
+            uri={track.uri}
           />
         </div>
       ))}

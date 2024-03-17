@@ -41,6 +41,7 @@ const Playlist = ({ playlistTracks, removeTrackFromPlaylist }) => {
               artist={track.artist}
               album={track.album}
               id={track.id}
+              uri={track.uri}
             />
           </div>
         ))}
